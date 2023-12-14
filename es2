@@ -1,16 +1,12 @@
 function firstUncompletedNote(notes) {
 
-    notes.forEach( note => {
-        note.todos.forEach(todo =>{
-            if (todo.done == false){
-                return note 
+    return notes.find(note=>!
+      note.todos.every(todo=>todo.done))
             
-            }
-            
-        }) 
         
-    })
-} 
+        
+    }
+ 
 
 const notes = [
   {

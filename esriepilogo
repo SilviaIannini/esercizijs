@@ -1,0 +1,24 @@
+const studenti = [
+  { nome: "Alice", voto: 95 },
+  { nome: "Bob", voto: 88 },
+  { nome: "Carol", voto: 76 },
+  { nome: "David", voto: 92 },
+  { nome: "Eve", voto: 84 },
+];
+
+let studentiNomi= studenti.forEach(student => studenti.nome)
+
+console.log(studentiNomi)
+
+let Studente = studenti.find(studenti => studenti.voto > 90)
+console.log(Studente)
+
+let mieiStudenti= studenti.filter(student => student.voto > 85)
+console.log(mieiStudenti)
+
+let sum= studenti.reduce((acc, student)=> acc + student.voto, 0)
+
+let average = sum/studenti.length
+console.log(average)
+
+
