@@ -1,0 +1,5 @@
+
+let myString= `questa è
+una stringa
+`
+console.log(myString)
