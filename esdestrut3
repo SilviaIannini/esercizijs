@@ -1,0 +1,5 @@
+const colors = ["red", "green", "blue"];
+const [firstElement, secondElement, thirdElement] = colors
+console.log(firstElement)
+console.log(secondElement)
+console.log(thirdElement)
