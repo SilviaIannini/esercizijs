@@ -1,0 +1,27 @@
+function runCallbacks(callbacks) {
+  callbacks.forEach(callback => callback())
+}
+function firstCallback() {
+    console.log("firstCallback")
+    
+   
+    
+
+  
+}
+function secondCallback() {
+    console.log("secondCallback")
+    
+    
+   
+    
+   
+}
+
+function thirdCallback() {
+    console.log("thirdCallback")
+    
+    
+}
+const callbackArray = [firstCallback, secondCallback, thirdCallback];
+runCallbacks(callbackArray);
