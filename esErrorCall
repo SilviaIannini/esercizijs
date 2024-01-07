@@ -1,0 +1,17 @@
+function performOperation(a, b, callback) {
+ if (a+b == 8) {
+    callback(null, "ok")
+ } else {
+    callback( new Error ("sbagliata"), null)
+ }
+}
+
+function displayResult(result,error,data) {
+  if (Error) {
+    console.log(error)
+  } else {
+    console.log(data)
+  }
+}
+
+performOperation(5, 3, displayResult);
