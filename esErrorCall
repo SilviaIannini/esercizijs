@@ -1,8 +1,8 @@
 function performOperation(a, b, callback) {
- if (a+b == 8) {
+ if (a+b == 7) {
     callback(null, "ok")
  } else {
-    callback( new Error ("sbagliata"), null)
+    callback( new Error ("no"), null)
  }
 }
 
