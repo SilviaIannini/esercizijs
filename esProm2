@@ -1,0 +1,9 @@
+function fetchUserData() {
+    //....
+  }
+  
+  function fetchUserPosts(userId, userName) {
+    //....
+  }
+  
+  fetchUserData()

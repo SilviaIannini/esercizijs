@@ -1,0 +1,23 @@
+function fetchDataFromAPI(age) {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            if (age <= 25) {
+        resolve ("ok")
+    } else {
+        reject ("ko")
+    }
+}, 1000)
+    })
+
+ 
+
+}
+
+
+
+const persona = fetchDataFromAPI(30).then((data)  => {
+    console.log(data)
+}).catch((error) =>{
+    console.log(error)
+
+})
