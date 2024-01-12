@@ -1,0 +1,16 @@
+function performOperation (a,b,callback) {
+   return setTimeout (callback(a,b), 3000)
+}
+
+function sommaNum (a,b) {
+const result = a + b
+return result
+}
+
+performOperation(3,7,sommaNum)
+console.log(result)// Creare una funzione generateNumber che restituisce una promessa. La promessa genera un numero casuale tra 1 e 10, lo somma a un valore fornito come argomento x, 
+// e risolve la promessa solo se il numero casuale generato è maggiore di 5.
+// Se il numero casuale è 5 o inferiore, la promessa viene rigettata con un messaggio di errore.
+
+
+

@@ -1,0 +1,18 @@
+function caricaModulo(modulo) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`Il modulo ${modulo} è stato caricato.`);
+    }, 2000);
+  });
+}
+
+async function lanciaVeicoloSpaziale (){
+   const moduloA = await caricaModulo("A")
+   const moduloB = await caricaModulo("B")
+   const moduloC = await caricaModulo("C")
+   console.log(moduloA, moduloB, moduloC, `il veicolo è pronto al lancio`)
+}
+
+
+lanciaVeicoloSpaziale()
+
